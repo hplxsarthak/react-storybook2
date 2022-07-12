@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 function Stack({children, spacing = 2, direction = 'row', wrap = false}) {
     const style = {
-        dispay: "flex",
-        gap: `${scale * 0.25}rem`,
+        display: "flex",
+        gap: `${spacing * 0.25}rem`,
         flexWrap: wrap ? "wrap": "nowrap",
-        flexDirection: direction
+        flexDirection: direction,
     }
 
     return (
@@ -16,7 +16,7 @@ function Stack({children, spacing = 2, direction = 'row', wrap = false}) {
 Stack.propTypes = {
     spacing: PropTypes.number,
     wrap: PropTypes.bool,
-    direction: PropTypes.oneOf(["row","coloumn"])
+    direction: PropTypes.oneOf(["row","column"])
 }
 
 export default Stack;

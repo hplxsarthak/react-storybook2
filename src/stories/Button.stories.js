@@ -9,8 +9,8 @@ export default {
 
 const Template = args => <Button {...args} />
 
-export const Red = Template.bind({})
-Red.args = {
+export const Btn = Template.bind({})
+Btn.args = {
     backgroundColor: 'red',
     label: "Red Button"
 }
